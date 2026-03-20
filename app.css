@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+@import "tailwindcss";
+
+:root {
+  --bg: #0f172a;
+  --bg-soft: #111c34;
+  --surface: rgba(15, 23, 42, 0.72);
+  --surface-strong: rgba(15, 23, 42, 0.92);
+  --border: rgba(148, 163, 184, 0.16);
+  --text: #e2e8f0;
+  --muted: #94a3b8;
+  --primary: #38bdf8;
+  --accent: #22c55e;
+  --shadow: 0 24px 80px rgba(2, 6, 23, 0.45);
+}
+
+[data-theme="light"] {
+  --bg: #e6f0ff;
+  --bg-soft: #f8fbff;
+  --surface: rgba(255, 255, 255, 0.7);
+  --surface-strong: rgba(255, 255, 255, 0.92);
+  --border: rgba(15, 23, 42, 0.1);
+  --text: #0f172a;
+  --muted: #475569;
+  --primary: #0284c7;
+  --accent: #16a34a;
+  --shadow: 0 24px 60px rgba(15, 23, 42, 0.12);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background:
+      radial-gradient(circle at top, rgba(56, 189, 248, 0.15), transparent 30%),
+      radial-gradient(circle at right, rgba(34, 197, 94, 0.12), transparent 25%),
+      linear-gradient(180deg, var(--bg) 0%, color-mix(in srgb, var(--bg) 85%, black) 100%);
+    color: var(--text);
+    font-family: "Inter", "Segoe UI", sans-serif;
+    min-height: 100vh;
+  }
+
+  ::selection {
+    background: color-mix(in srgb, var(--primary) 35%, transparent);
+    color: white;
+  }
+}
+
+@layer components {
+  .section-shell {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .panel {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+    @apply rounded-3xl backdrop-blur-xl;
+  }
+
+  .panel-strong {
+    background: linear-gradient(180deg, color-mix(in srgb, var(--surface-strong) 82%, transparent), var(--surface));
+    border: 1px solid color-mix(in srgb, var(--primary) 15%, var(--border));
+    box-shadow: var(--shadow);
+    @apply rounded-[28px] backdrop-blur-xl;
+  }
+
+  .eyebrow {
+    color: var(--primary);
+    @apply text-sm font-semibold uppercase tracking-[0.24em];
+  }
+
+  .text-gradient {
+    background: linear-gradient(90deg, var(--primary), #7dd3fc, var(--accent));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .pill {
+    border: 1px solid color-mix(in srgb, var(--primary) 14%, var(--border));
+    background: color-mix(in srgb, var(--surface-strong) 75%, transparent);
+    @apply inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium;
+  }
+
+  .grid-glow {
+    background-image:
+      linear-gradient(rgba(148, 163, 184, 0.08) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(148, 163, 184, 0.08) 1px, transparent 1px);
+    background-size: 54px 54px;
+    mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.55), transparent 88%);
+  }
+}
