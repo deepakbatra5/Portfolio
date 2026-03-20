@@ -20,7 +20,7 @@ export default function PipelineSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.25 }}
                 transition={{ duration: 0.45, delay: index * 0.08 }}
-                className="relative z-10 flex-1 rounded-2xl border border-white/10 bg-slate-950/45 p-4 text-center"
+                className="relative z-10 flex-1 rounded-2xl border border-white/10 bg-slate-950/45 p-4 text-center after:absolute after:bottom-0 after:left-[8%] after:h-0.5 after:w-[84%] after:bg-gradient-to-r after:from-sky-400 after:via-cyan-300 after:to-emerald-400 after:content-['']"
               >
                 <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-2xl bg-sky-400/12 text-base font-semibold text-sky-300">
                   0{index + 1}

@@ -119,7 +119,7 @@ export const projects = [
       { label: "Frontend Stack", value: "4" },
     ],
     impact: [],
-    github: "https://github.com/deepakbatra5",
+    github: "https://github.com/deepakbatra5/project",
     image: withBase("/images/ecommerce-project.png"),
   },
 ];
@@ -127,7 +127,7 @@ export const projects = [
 export const githubProfile = {
   username: "deepakbatra5",
   name: "Deepak Kumar",
-  avatar: withBase("/images/profile-photo.jpeg"),
+  avatar: withBase("/images/profile-photo.png"),
   profile: "https://github.com/deepakbatra5",
   contributions: 184,
   reposTouched: 23,
@@ -156,18 +156,31 @@ export const pipelineSteps = [
   "Deployment",
 ];
 
-export const training = {
-  title: "Data Structures & Algorithms Using Java",
-  provider: "Cipher Schools",
-  duration: "May 2025 - July 2025",
-  certificateLink:
-    "https://www.cipherschools.com/certificate/preview?id=6930969c09c57b51f7f14a40",
-  points: [
-    "Java-based DSA training",
-    "Trees, graphs, and linked lists",
-    "Hands-on coding and logic practice",
-  ],
-};
+export const trainingPrograms = [
+  {
+    title: "Data Structures & Algorithms Using Java",
+    provider: "Cipher Schools",
+    duration: "May 2025 - July 2025",
+    certificateLink:
+      "https://www.cipherschools.com/certificate/preview?id=6930969c09c57b51f7f14a40",
+    points: [
+      "Java-based DSA training",
+      "Trees, graphs, and linked lists",
+      "Hands-on coding and logic practice",
+    ],
+  },
+  {
+    title: "Python Programming",
+    provider: "Udemy",
+    duration: "Oct 2023 - Dec 2023",
+    certificateLink: "https://www.udemy.com/certificate/UC-9072d5fb-cf43-427c-95fa-15671e9dd1c9/",
+    points: [
+      "Core Python programming concepts",
+      "Hands-on coding exercises",
+      "Problem-solving with Python",
+    ],
+  },
+];
 
 export const certifications = [
   {
@@ -189,10 +202,10 @@ export const certifications = [
     link: "https://www.udemy.com/certificate/UC-92d60b03-e7ac-49d3-a1ab-5b5986b254f2/",
   },
   {
-    title: "Python Programming",
-    provider: "Udemy",
-    date: "Dec 2023",
-    link: "https://www.udemy.com/certificate/UC-9072d5fb-cf43-427c-95fa-15671e9dd1c9/",
+    title: "Cyber Security",
+    provider: "Encrypt Edge",
+    date: "March 2024",
+    link: withBase("/docs/encrypt-edge-cyber-security.pdf"),
   },
 ];
 

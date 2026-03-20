@@ -82,7 +82,7 @@ export default function HeroSection() {
         <img
           src={githubProfile.avatar}
           alt={`${profileInfo.name} profile`}
-          className="relative h-80 w-80 rounded-full border border-white/10 object-cover object-[center_24%] shadow-[0_30px_80px_rgba(2,6,23,0.45)] sm:h-[26rem] sm:w-[26rem]"
+          className="relative h-80 w-80 rounded-full border border-white/10 object-cover object-center shadow-[0_30px_80px_rgba(2,6,23,0.45)] sm:h-[26rem] sm:w-[26rem]"
         />
       </motion.div>
     </section>

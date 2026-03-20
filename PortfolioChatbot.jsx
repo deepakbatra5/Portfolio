@@ -9,7 +9,7 @@ import {
   projects,
   quickFacts,
   skillGroups,
-  training,
+  trainingPrograms,
 } from "./portfolioData";
 
 const quickQuestions = [
@@ -103,9 +103,9 @@ function getEducationReply() {
 }
 
 function getTrainingReply() {
-  return `${training.title} by ${training.provider} (${training.duration}). Focus areas: ${training.points.join(
-    ", "
-  )}. Certificate: ${training.certificateLink}`;
+  return `${profileInfo.name}'s training includes ${trainingPrograms
+    .map((item) => `${item.title} by ${item.provider} (${item.duration})`)
+    .join(" | ")}.`;
 }
 
 function getCertificationsReply() {
