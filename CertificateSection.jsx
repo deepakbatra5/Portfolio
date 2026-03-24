@@ -21,6 +21,14 @@ export default function CertificateSection() {
             transition={{ duration: 0.5, delay: index * 0.08 }}
             className="panel p-6"
           >
+            <div className="overflow-hidden rounded-3xl border border-white/10 bg-slate-950/55">
+              <img
+                src={item.previewImage}
+                alt={`${item.title} certificate preview`}
+                className="h-48 w-full object-cover object-top"
+                loading="lazy"
+              />
+            </div>
             <p className="text-sm text-[var(--muted)]">0{index + 1}</p>
             <h3 className="mt-3 text-lg font-semibold">{item.title}</h3>
             <p className="mt-2 text-sm text-[var(--muted)]">

@@ -188,24 +188,28 @@ export const certifications = [
     provider: "Cipher Schools",
     date: "Dec 2025",
     link: "https://www.cipherschools.com/certificate/preview?id=688224e2ca64e035786b17d6",
+    previewImage: withBase("/images/certificate-git-github.png"),
   },
   {
     title: "Data Structures",
     provider: "Cipher Schools",
     date: "Jul 2025",
     link: "https://www.cipherschools.com/certificate/preview?id=6930969c09c57b51f7f14a40",
+    previewImage: withBase("/images/certificate-data-structures.png"),
   },
   {
     title: "Web Development",
     provider: "Udemy",
     date: "Jul 2025",
     link: "https://www.udemy.com/certificate/UC-92d60b03-e7ac-49d3-a1ab-5b5986b254f2/",
+    previewImage: withBase("/images/certificate-web-development.png"),
   },
   {
     title: "Cyber Security",
     provider: "Encrypt Edge",
     date: "March 2024",
     link: withBase("/docs/encrypt-edge-cyber-security.pdf"),
+    previewImage: withBase("/images/certificate-cyber-security.png"),
   },
 ];
 

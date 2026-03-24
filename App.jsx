@@ -83,7 +83,7 @@ export default function App() {
       </main>
 
       <footer className="section-shell pb-10 text-center text-sm text-[var(--muted)]">
-        Deepak Kumar | {new Date().getFullYear()} | DevOps Engineer | Full Stack Developer | AI Enthusiast
+        Deepak Kumar | {new Date().getFullYear()} | DevOps Engineer
       </footer>
 
       <PortfolioChatbot />
