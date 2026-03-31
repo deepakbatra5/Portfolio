@@ -96,7 +96,7 @@ export const projects = [
     image: withBase("/images/foodhub.png"),
   },
   {
-    name: "AI-Powered Task Manager",
+    name: "Specialized Chatbot",
     tag: "AI + Full Stack",
     description: "AI-assisted task workflow focused on prioritization, authentication, and live status flow.",
     tech: ["React", "Node.js", "Express", "OpenAI API"],
@@ -107,7 +107,8 @@ export const projects = [
     ],
     impact: [],
     github: "https://github.com/deepakbatra5/trueroadmap.github.io",
-    image: withBase("/images/ai-task-manager.png"),
+    liveUrl: "https://expert-hub.onrender.com/",
+    image: withBase("/images/specialized-chatbot.png"),
   },
   {
     name: "Travel Sphere",
