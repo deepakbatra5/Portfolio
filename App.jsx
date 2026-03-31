@@ -42,30 +42,36 @@ export default function App() {
         transition={{ duration: 0.7, ease: "easeOut" }}
         className="sticky top-0 z-50 border-b border-white/5 bg-[var(--surface)] backdrop-blur-xl"
       >
-        <div className="section-shell flex items-center justify-between gap-4 py-4">
+        <div className="section-shell flex flex-wrap items-center gap-3 py-3">
           <a
             href="https://github.com/deepakbatra5"
             target="_blank"
             rel="noreferrer"
-            className="rounded-full border border-white/8 bg-white/5 px-4 py-2 text-base font-semibold tracking-[0.08em] text-[var(--text)] transition-all duration-200 hover:-translate-y-0.5 hover:border-sky-400/40 hover:text-sky-300"
+            className="inline-flex min-w-fit rounded-2xl border border-white/8 bg-white/5 px-4 py-2 text-sm font-semibold tracking-[0.08em] text-[var(--text)] transition-all duration-200 hover:-translate-y-0.5 hover:border-sky-400/40 hover:text-sky-300"
           >
-            github.com/deepakbatra5
+            GitHub
           </a>
-          <div className="hidden items-center gap-2 rounded-full border border-white/8 bg-white/5 px-3 py-2 text-base text-[var(--muted)] md:flex">
+
+          <nav className="order-3 w-full md:order-none md:flex-1">
+            <div className="flex items-center gap-2 overflow-x-auto rounded-full border border-white/8 bg-white/5 px-3 py-2 text-sm text-[var(--muted)] md:justify-center md:text-base">
             {navigation.map((item) => (
               <a
                 key={item.href}
                 href={item.href}
-                className="rounded-full px-4 py-2 font-medium transition-all duration-200 hover:bg-white/8 hover:text-[var(--text)]"
+                  className="whitespace-nowrap rounded-full px-4 py-2 font-medium transition-all duration-200 hover:bg-white/8 hover:text-[var(--text)]"
               >
                 {item.label}
               </a>
             ))}
+            </div>
+          </nav>
+
+          <div className="ml-auto">
+            <ThemeToggle
+              theme={theme}
+              onToggle={() => setTheme((current) => (current === "dark" ? "light" : "dark"))}
+            />
           </div>
-          <ThemeToggle
-            theme={theme}
-            onToggle={() => setTheme((current) => (current === "dark" ? "light" : "dark"))}
-          />
         </div>
       </motion.header>
 

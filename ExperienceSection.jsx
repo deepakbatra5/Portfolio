@@ -21,6 +21,16 @@ export default function ExperienceSection() {
             transition={{ duration: 0.6, delay: index * 0.08 }}
             className="panel-strong p-8"
           >
+            {item.previewImage ? (
+              <div className="overflow-hidden rounded-3xl border border-white/10 bg-slate-950/55">
+                <img
+                  src={item.previewImage}
+                  alt={`${item.title} training certificate preview`}
+                  className="h-48 w-full object-cover object-top"
+                  loading="lazy"
+                />
+              </div>
+            ) : null}
             <p className="eyebrow">Training 0{index + 1}</p>
             <h3 className="mt-4 text-2xl font-semibold">{item.title}</h3>
             <p className="mt-2 text-[var(--muted)]">

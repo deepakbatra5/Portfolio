@@ -81,7 +81,7 @@ export const skillGroups = [
 
 export const projects = [
   {
-    name: "Zomato Clone",
+    name: "FoodHub",
     tag: "DevOps Pipeline",
     description: "Visual-first DevOps build with automated delivery and Kubernetes deployment flow.",
     tech: ["GitHub", "Jenkins", "Docker", "Kubernetes"],
@@ -91,8 +91,9 @@ export const projects = [
       { label: "Core Tools", value: "6" },
     ],
     impact: [],
-    github: "https://github.com/deepakbatra5/fullstack-cicd-project",
-    image: withBase("/images/zomato-devops.png"),
+    github: "https://github.com/deepakbatra5/foodhub.git",
+    liveUrl: "https://foodhub.sbs/",
+    image: withBase("/images/foodhub.png"),
   },
   {
     name: "AI-Powered Task Manager",
@@ -109,7 +110,7 @@ export const projects = [
     image: withBase("/images/ai-task-manager.png"),
   },
   {
-    name: "E-Commerce Website",
+    name: "Travel Sphere",
     tag: "Frontend Commerce",
     description: "Responsive commerce UI built for browsing, cart actions, and clean mobile-first flow.",
     tech: ["HTML5", "CSS3", "JavaScript", "GitHub"],
@@ -119,8 +120,9 @@ export const projects = [
       { label: "Frontend Stack", value: "4" },
     ],
     impact: [],
-    github: "https://github.com/deepakbatra5/project",
-    image: withBase("/images/ecommerce-project.png"),
+    github: "https://github.com/deepakbatra5/Smart-Tour-and-Travel-System.git",
+    liveUrl: "https://smart-tour-and-travel-system.vercel.app/",
+    image: withBase("/images/travel-sphere.png"),
   },
 ];
 
@@ -158,11 +160,12 @@ export const pipelineSteps = [
 
 export const trainingPrograms = [
   {
-    title: "Data Structures & Algorithms Using Java",
+    title: "Data Structures",
     provider: "Cipher Schools",
     duration: "May 2025 - July 2025",
     certificateLink:
-      "https://www.cipherschools.com/certificate/preview?id=6930969c09c57b51f7f14a40",
+      "https://www.cipherschools.com/certificate/preview?id=688224e2ca64e035786b17d6",
+    previewImage: withBase("/images/certificate-data-structures.png"),
     points: [
       "Java-based DSA training",
       "Trees, graphs, and linked lists",
@@ -170,14 +173,15 @@ export const trainingPrograms = [
     ],
   },
   {
-    title: "Python Programming",
-    provider: "Udemy",
-    duration: "Oct 2023 - Dec 2023",
-    certificateLink: "https://www.udemy.com/certificate/UC-9072d5fb-cf43-427c-95fa-15671e9dd1c9/",
+    title: "Cyber Security",
+    provider: "Encrypt Edge",
+    duration: "March 2024",
+    certificateLink: withBase("/docs/encrypt-edge-cyber-security.pdf"),
+    previewImage: withBase("/images/certificate-cyber-security.png"),
     points: [
-      "Core Python programming concepts",
-      "Hands-on coding exercises",
-      "Problem-solving with Python",
+      "Cybersecurity fundamentals and core security concepts",
+      "Practical awareness of common vulnerabilities",
+      "Safe practices for protecting systems and data",
     ],
   },
 ];
@@ -187,29 +191,29 @@ export const certifications = [
     title: "Git and GitHub",
     provider: "Cipher Schools",
     date: "Dec 2025",
-    link: "https://www.cipherschools.com/certificate/preview?id=688224e2ca64e035786b17d6",
+    link: "https://www.cipherschools.com/certificate/preview?id=6930969c09c57b51f7f14a40",
     previewImage: withBase("/images/certificate-git-github.png"),
   },
   {
-    title: "Data Structures",
-    provider: "Cipher Schools",
-    date: "Jul 2025",
-    link: "https://www.cipherschools.com/certificate/preview?id=6930969c09c57b51f7f14a40",
-    previewImage: withBase("/images/certificate-data-structures.png"),
+    title: "Microsoft Azure",
+    provider: "Microsoft",
+    date: "January 2025",
+    link: withBase("/docs/azure-certificate.pdf"),
+    previewImage: withBase("/docs/azure-certificate.pdf"),
   },
   {
     title: "Web Development",
     provider: "Udemy",
     date: "Jul 2025",
-    link: "https://www.udemy.com/certificate/UC-92d60b03-e7ac-49d3-a1ab-5b5986b254f2/",
+    link: "https://www.udemy.com/certificate/UC-9072d5fb-cf43-427c-95fa-15671e9dd1c9/",
     previewImage: withBase("/images/certificate-web-development.png"),
   },
   {
-    title: "Cyber Security",
-    provider: "Encrypt Edge",
-    date: "March 2024",
-    link: withBase("/docs/encrypt-edge-cyber-security.pdf"),
-    previewImage: withBase("/images/certificate-cyber-security.png"),
+    title: "Python Programming",
+    provider: "Udemy",
+    date: "Feb 2024",
+    link: "https://www.udemy.com/certificate/UC-92d60b03-e7ac-49d3-a1ab-5b5986b254f2/",
+    previewImage: withBase("/images/certificate-python-programming.png"),
   },
 ];
 

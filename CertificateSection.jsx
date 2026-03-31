@@ -22,12 +22,21 @@ export default function CertificateSection() {
             className="panel p-6"
           >
             <div className="overflow-hidden rounded-3xl border border-white/10 bg-slate-950/55">
-              <img
-                src={item.previewImage}
-                alt={`${item.title} certificate preview`}
-                className="h-48 w-full object-cover object-top"
-                loading="lazy"
-              />
+              {item.previewImage.toLowerCase().endsWith(".pdf") ? (
+                <iframe
+                  src={item.previewImage}
+                  title={`${item.title} certificate preview`}
+                  className="h-48 w-full"
+                  loading="lazy"
+                />
+              ) : (
+                <img
+                  src={item.previewImage}
+                  alt={`${item.title} certificate preview`}
+                  className="h-48 w-full object-cover object-top"
+                  loading="lazy"
+                />
+              )}
             </div>
             <p className="text-sm text-[var(--muted)]">0{index + 1}</p>
             <h3 className="mt-3 text-lg font-semibold">{item.title}</h3>
