@@ -107,7 +107,7 @@ export const projects = [
     ],
     impact: [],
     github: "https://github.com/deepakbatra5/trueroadmap.github.io",
-    liveUrl: "https://expert-hub.onrender.com/",
+    liveUrl: "https://expert-hub-peach.vercel.app/",
     image: withBase("/images/specialized-chatbot.png"),
   },
   {
