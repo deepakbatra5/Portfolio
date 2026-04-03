@@ -122,7 +122,7 @@ export const projects = [
     ],
     impact: [],
     github: "https://github.com/deepakbatra5/Smart-Tour-and-Travel-System.git",
-    liveUrl: "https://smart-tour-and-travel-system.vercel.app/",
+    liveUrl: "https://travelsphere.sbs/",
     image: withBase("/images/travel-sphere.png"),
   },
 ];
